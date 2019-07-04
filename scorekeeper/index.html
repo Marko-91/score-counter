@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>SCORE KEEPER</title>
+</head>
+
+<body>
+  <div class="container" style="max-width: 1000px;">
+    <div class="card col-6 bg-light mx-auto mt-3 border-primary">
+      <h1 class="text-primary text-center">Scoreboard</h1>
+      <div class="card-body">
+        <h2 class="card-header text-primary text-center"><span id="p1-score">0</span> to <span id="p2-score">0</span>
+        </h2>
+        <i class="card-text text-primary">playing to: <span id="limit">5</span></i>
+      </div>
+    </div>
+    <div class="card row bg-primary mt-3 mx-auto">
+      <div class="col-sm">
+        <h3 class="text-white text-center mt-3">Choose a winning score.</h3>
+        <input class="form-control mt-3 mb-3" type="number" name="text" id="input">
+      </div>
+      <div class="col-sm pb-3">
+        <button class="btn btn-dark" id="p1">Player One</button>
+        <button class="btn btn-dark" id="p2">Player Two</button>
+        <button class="btn btn-secondary float-right" id="reset">Reset Game</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
